@@ -24,7 +24,7 @@ It's important to optimize assets for the web. This will help load times as well
 
 **Cleaning up Old Asset Directories**
 
-During the process of switching assets over from being housed in a repo to being housed here, use the accompanying `asset-cleaner.sh` tool to clean up Git history and reduce the sizes of repos (effectively clearing these assets from the repos history. Take care when passing the name of your repo as changing git history can be dangerous.)
+During the process of switching assets over from being housed in a repo to being housed here, use the accompanying `asset-cleaner.sh` tool to clean up Git history and reduce the sizes of repos (effectively clearing these assets from the repos history. Take care when passing the name of your repo as [changing git history can be dangerous](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).)
 
 ## Attribution
 
