@@ -10,14 +10,14 @@ USERNAME="Justintime50"
 FRESH_GIT_REPOS_PATH="$HOME/git/playground/assets"
 
 main() {
-    cd "$FRESH_GIT_REPOS_PATH"
+    cd "$FRESH_GIT_REPOS_PATH" || exit 1
     git clone https://github.com/"$USERNAME"/"$1".git
-    cd "$1"
+    cd "$1" || exit 1
     echo "Removing 'assets' directory for $(pwd)"
     git filter-repo --invert-paths --path assets/
     git remote add origin https://github.com/"$USERNAME"/"$1"
     git push origin --force --all
-    cd
+    cd || exit 1
     echo "Script complete, inspect the repo for removed assets."
 }
 

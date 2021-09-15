@@ -2,6 +2,8 @@
 
 A repo containing assets such as images and gifs used in my GitHub project's README files.
 
+[![Build](https://github.com/Justintime50/assets/workflows/build/badge.svg)](https://github.com/Justintime50/assets/actions)
+
 I'm storing non-code assets here because assets increase the Git repo size and are not easily removable from Git history. This means that clone sizes are permanently inflated; this grows quickly if ever an image is swapped out or removed, it remains in the history. By storing assets separately, we can easily swap the files whenever we want and keep Git repo sizes smaller.
 
 ## Usage
