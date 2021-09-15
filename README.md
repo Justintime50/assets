@@ -22,9 +22,9 @@ It's important to optimize assets for the web. This will help load times as well
 1. Images should pop and have a nice color-palette. This is especially true now that GitHub supports light and dark themes. Dark icons will not show up well on the GitHub dark theme
 1. Showcase images that appear on README files should have `20-30 pixels of padding` around the image and the canvas size should traditionally not exceed `256x256` pixels
 
-**BFG Repo Cleaner**
+**Cleaning up Old Asset Directories**
 
-During the process of switching assets over from being housed in a repo to being housed here, use the [BFG Repo Cleaner](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) tool to clean up Git history and reduce the sizes of repos (effectively clearing these assets from the repos history. Take care to do this properly as changing git history can be dangerous.)
+During the process of switching assets over from being housed in a repo to being housed here, use the accompanying `asset-cleaner.sh` tool to clean up Git history and reduce the sizes of repos (effectively clearing these assets from the repos history. Take care when passing the name of your repo as changing git history can be dangerous.)
 
 ## Attribution
 
