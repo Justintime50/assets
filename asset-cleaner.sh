@@ -3,6 +3,7 @@
 # Use this tool to clean a repo of its `assets` directory through its entire git history.
 # This is important because even if a file is removed, it remains in git history and continues using up disk space.
 # Assumes you have `git-filter-repo` installed already: `brew install git-filter-repo`
+# NOTE: Repos must have no default branch protection rules, no outstanding PRs, and no un-merged branches
 # Usage: ./asset-cleaner.sh my-repo-name
 
 USERNAME="Justintime50"
