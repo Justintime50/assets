@@ -4,6 +4,8 @@
 
 main() {
     LINT_FAILED=0
+
+    # Iterate over each directory and run tests
     for DIR in src/* ; do
         for FILE in "$DIR"/* ; do
             if ! test_extension ; then
@@ -15,7 +17,11 @@ main() {
         done
     done
 
-    if [ "$LINT_FAILED" == 1 ] ; then
+    # Set exit code based on if the tests passed or failed
+    if [ "$LINT_FAILED" == 0 ] ; then
+        echo "Lint passed!"
+        exit 0
+    else
         echo "Lint failed!"
         exit 1
     fi

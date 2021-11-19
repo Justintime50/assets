@@ -23,7 +23,7 @@ It's important to optimize assets for the web. This will help load times as well
 1. When possible, images should be `png` to support transparency. This will make them load well on a README
 1. Images should pop and have a nice color-palette. This is especially true now that GitHub supports light and dark themes. Dark icons will not show up well on the GitHub dark theme
 1. Showcase images that appear on README files should have `20-30 pixels of padding` around the image and the canvas size should traditionally not exceed `256x256` pixels (if they are icons). Images of the console should be taken of that single window
-1. Images should not exceed `1mb` in size and videos or gifs should not exceed `2mb`
+1. Images should not exceed `2mb` in size and videos or gifs should not exceed `5mb`
 
 ```bash
 # Run linting on this repo
