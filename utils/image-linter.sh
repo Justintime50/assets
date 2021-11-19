@@ -5,7 +5,7 @@
 main() {
     LINT_FAILED=0
     for DIR in src/* ; do
-        for FILE in $DIR/* ; do
+        for FILE in "$DIR"/* ; do
             if ! test_extension ; then
                 LINT_FAILED=1
             fi
@@ -29,11 +29,11 @@ test_extension() {
     fi
 }
 
-# Files must be smaller than 1mb if images and 2mb if videos/gifs
+# Files must be smaller than 2mb if images and 5mb if videos/gifs
 test_filesize() {
-    MAX_IMAGE_FILESIZE_BYTES=1000000
-    MAX_VIDEO_FILESIZE_BYTES=2000000
-    FILESIZE_BYTES=$(wc -c $FILE | awk '{print $1}')
+    MAX_IMAGE_FILESIZE_BYTES=2000000
+    MAX_VIDEO_FILESIZE_BYTES=5000000
+    FILESIZE_BYTES=$(wc -c "$FILE" | awk '{print $1}')
     if [ "$FILESIZE_BYTES" -gt "$MAX_VIDEO_FILESIZE_BYTES" ] && [ "${FILE: -4}" == ".gif" ] ; then
         echo "$FILE is larger than the max filesize ($MAX_VIDEO_FILESIZE_BYTES) at $FILESIZE_BYTES bytes."
         return 1
