@@ -22,11 +22,22 @@ It's important to optimize assets for the web. This will help load times as well
 
 1. When possible, images should be `png` to support transparency. This will make them load well on a README
 1. Images should pop and have a nice color-palette. This is especially true now that GitHub supports light and dark themes. Dark icons will not show up well on the GitHub dark theme
-1. Showcase images that appear on README files should have `20-30 pixels of padding` around the image and the canvas size should traditionally not exceed `256x256` pixels
+1. Showcase images that appear on README files should have `20-30 pixels of padding` around the image and the canvas size should traditionally not exceed `256x256` pixels (if they are icons). Images of the console should be taken of that single window
+1. Images should not exceed `1mb` in size and videos or gifs should not exceed `2mb`
+
+```bash
+# Run linting on this repo
+./utils/image-linter.sh
+```
 
 **Cleaning up Old Asset Directories**
 
-During the process of switching assets over from being housed in a repo to being housed here, use the accompanying `asset-cleaner.sh` tool to clean up Git history and reduce the sizes of repos (effectively clearing these assets from the repos history. Take care when passing the name of your repo as [changing git history can be dangerous](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).)
+During the process of switching assets over from being housed in a repo to being housed here, use the accompanying `asset-cleaner` tool to clean up Git history and reduce the sizes of repos (effectively clearing these assets from the repos history. Take care when passing the name of your repo as [changing git history can be dangerous](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).)
+
+```bash
+# Clean a repo of it's `asset` directory
+./utils/asset-cleaner.sh my-repo-name
+```
 
 ## Attribution
 

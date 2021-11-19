@@ -4,7 +4,7 @@
 # This is important because even if a file is removed, it remains in git history and continues using up disk space.
 # Assumes you have `git-filter-repo` installed already: `brew install git-filter-repo`
 # NOTE: Repos must have no default branch protection rules, no outstanding PRs, and no un-merged branches
-# Usage: ./asset-cleaner.sh my-repo-name
+# Usage: ./utils/asset-cleaner.sh my-repo-name
 
 USERNAME="Justintime50"
 FRESH_GIT_REPOS_PATH="$HOME/git/playground/assets"
