@@ -8,7 +8,7 @@
 
 USERNAME="Justintime50"
 FRESH_GIT_REPOS_PATH="$HOME/git/playground/assets"
-PATH_TO_CLEAN="assets/"  # Ensure a trailing slash is present for directories
+PATH_TO_CLEAN="assets/" # Ensure a trailing slash is present for directories
 
 main() {
     cd "$FRESH_GIT_REPOS_PATH" || exit 1
