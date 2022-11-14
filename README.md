@@ -10,13 +10,11 @@ I'm storing non-code assets here because assets increase the Git repo size and a
 
 Simply add assets to a folder under `src` named the same as the repo to which they belong and then reference them with a link such as:
 
-```
-https://raw.githubusercontent.com/justintime50/assets/main/src/repo-name/showcase.png
-```
+`https://raw.githubusercontent.com/justintime50/assets/main/src/repo-name/showcase.png`
 
 ## Development
 
-**Assets**
+### Assets
 
 It's important to optimize assets for the web. This will help load times as well as keep sizes small. Here are a few things to keep in mind:
 
@@ -30,7 +28,7 @@ It's important to optimize assets for the web. This will help load times as well
 ./utils/image-linter.sh
 ```
 
-**Cleaning up Old Asset Directories**
+### Cleaning up Old Asset Directories
 
 During the process of switching assets over from being housed in a repo to being housed here, use the accompanying `asset-cleaner` tool to clean up Git history and reduce the sizes of repos (effectively clearing these assets from the repos history. Take care when passing the name of your repo as [changing git history can be dangerous](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).)
 
