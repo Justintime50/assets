@@ -48,6 +48,7 @@ During the process of switching assets over from being housed in a repo to being
 * Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 * Icons made by <a href="https://www.flaticon.com/authors/creatype" title="Creatype">Creatype</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
 * <a href="https://www.flaticon.com/free-icons/paper" title="paper icons">Paper icons created by Freepik - Flaticon</a>
+* <a href="https://www.flaticon.com/free-icons/convert" title="convert icons">Convert icons created by Freepik - Flaticon</a>
 * Docker logo used without modification
 * Golang logo used without modification
 * Laravel logo used without modification
